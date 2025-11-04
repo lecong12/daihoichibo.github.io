@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đại hội đại biểu Đoàn TNCS Hồ Chí Minh UBND tỉnh Ninh Bình lần thứ I, nhiệm kỳ 2025 - 20230</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #333;
+	  color: yellow;
+      <!-- color: #051da3; -->
+    }
+
+    /* Hero Section */
+	.font-gold {
+		background: linear-gradient(to right, #C49842 0%, #B1803C 15%, #F7DE7D 33%, #BD8E40 48%, #F7DE7D 68%, #CA9F43 82%, #F7DE7D 92%, #CA9F43 100%);
+		background-clip: text;
+		color: transparent;
+	}
+	
+    .hero-section {
+      position: relative;
+      height: 70vh;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay-gradient {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3a9bfb  100%);
+      z-index: -1;
+    }
+
+    .hero-content {
+      z-index: 1;
+      padding: 10px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+	  text-shadow: 1px 1px 3px #000;
+      <!-- text-shadow: -->
+		<!-- 2px 2px 0 white, -->
+		<!-- -2px 2px 0 white, -->
+		<!-- 2px -2px 0 white, -->
+		<!-- -2px -2px 0 white; -->
+    }
+	
+
+	.logo {
+		width: 200px;
+	}
+    .hero-content h3 {
+      font-size: 2.5rem;
+      <!-- margin-top: 10px; -->
+     text-shadow: 1px 1px 3px #000;
+    }
+
+    /* Tài liệu Section */
+    .tai-lieu-section {
+      <!-- background-color: #3a9bfb; -->
+      color: #051da3;
+      padding: 30px 20px;
+      text-align: center;
+      transition: background-color 0.5s ease;
+    }
+
+    .tai-lieu-section h2 {
+	  margin-top: 60px;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+	  background: linear-gradient(to right, #C49842 0%, #B1803C 15%, #F7DE7D 33%, #BD8E40 48%, #F7DE7D 68%, #CA9F43 82%, #F7DE7D 92%, #CA9F43 100%);
+	  background-clip: text;
+      color: transparent;
+    }
+
+    .tai-lieu-list {
+	  max-width: 1380px;
+	  margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+	
+	.tai-lieu-list .tai-lieu-item:nth-child(1){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+	.tai-lieu-list .tai-lieu-item:nth-child(2){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+
+	.tai-lieu-list .tai-lieu-item:nth-child(3){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+	.tai-lieu-list .tai-lieu-item:nth-child(4){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+	.tai-lieu-list .tai-lieu-item:nth-child(5){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+    .tai-lieu-list .tai-lieu-item:nth-child(6){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+	.tai-lieu-list .tai-lieu-item:nth-child(7){
+		background: url(_asssets/images/3.png) no-repeat center top;
+		background-size: 325%;
+	}
+	
+
+    .tai-lieu-item {
+	  flex: 1 1 200px;
+      padding: 25px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      color: #051da3;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+	  max-width:260px;
+	  justify-content: space-around;
+    }
+
+    .tai-lieu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .tai-lieu-item i {
+      font-size: 1.5rem;
+      color: #051da3;
+    }
+
+
+    /* Văn kiện Section */
+    .van-kien-section {
+      <!-- background-color: #3a9bfb; -->
+      color: 051da3;
+      padding: 60px 20px 80px;
+      text-align: center;
+    }
+
+    .van-kien-section h2 {
+      font-size: 45px;
+	  font-weight: bold;
+	  margin-bottom: 40px;
+	  background: linear-gradient(to right, #C49842 0%, #B1803C 15%, #F7DE7D 33%, #BD8E40 48%, #F7DE7D 68%, #CA9F43 82%, #F7DE7D 92%, #CA9F43 100%);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .van-kien-section .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .van-kien-section .content .item {
+	
+		font-size: 20px;
+		background-size: 135% !important;
+		background: url(_asssets/images/3.png) no-repeat center top;
+		color: #051da3;
+		font-weight: bold;
+		padding: 45px;
+		border-radius: 10px;
+		max-width: 380px;
+		flex: 1 1 200px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+    }
+	
+	.main-content {
+	  background-color: #3a9bfb;
+	  background-image: url(_asssets/images/blue-bg-4.4.png);
+	  background-blend-mode: screen; /* hoặc multiply, screen, soft-light... */
+	  background-position: center;
+	  background-position: center;
+	}
+
+    .red-section {
+	  <!-- background-color: #3a9bfb; -->
+	  <!-- background-image: url(/_asssets/images/blue-bg-4.2.png); -->
+	  <!-- background-size:100%; -->
+	  <!-- background-blend-mode: screen; /* hoặc multiply, screen, soft-light... */ -->
+	  <!-- background-position: center; -->
+      padding: 30px 20px;
+      color: #051da3;
+      text-align: center;
+    }
+
+    .red-section .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+	  margin-top: 60px;
+	  background: linear-gradient(to right, #C49842 0%, #B1803C 15%, #F7DE7D 33%, #BD8E40 48%, #F7DE7D 68%, #CA9F43 82%, #F7DE7D 92%, #CA9F43 100%);
+	  background-clip: text;
+      color: transparent;
+    }
+
+    .grid-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+	  padding: 20px;
+    }
+
+    .grid-buttons button {
+	  <!-- background: url(/_asssets/images/logoDoan.png) no-repeat 5px; -->
+      line-height: 20px;
+	  padding: 10px 10px 10px 10px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #fff;
+      color: #051da3;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+	  text-align: center;
+	  background-size: 30px;
+    }
+
+    .grid-buttons button:hover {
+      background-color: #f7ef6acc;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+	  
+	  .hero-content h3 {
+        font-size: 1.3rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+	  
+	  .logo {
+		width: 100px;
+	}
+
+      .van-kien-section h2 {
+        font-size: 2rem;
+      }
+	  
+	   .tai-lieu-item {
+	   	min-width: 100%;
+	   }
+	   
+	   .van-kien-section .content .item {
+	   	min-width: 100%;
+	   }
+	   .content .item:nth-child(4){
+			background-size: 250% !important;
+	   }
+	   
+	   .main-content {
+		background-size: 149%;
+	   }
+    }
+	@media(min-width: 800px) {
+		.van-kien-section .content .item {
+			background-size: 480% !important;
+		}
+		
+		.main-content {
+		 background-size: 87%;
+		}
+	}
+  </style>
+</head>
+
+<body>
+  <section class="hero-section">
+   <img id="placeholder" class="background-video"  src="_asssets/images/bgdoan.png"/>
+    <video id="backgroundVideo" autoplay muted loop playsinline class="background-video" style="display: none;">
+	</video>
+    <div class="overlay-gradient"></div>
+    <div class="hero-content">
+	  <!-- <img id="logo" class="logo"  src="/_asssets/images/logoDoan.png"/> -->
+      <h1>ĐẠI HỘI ĐẠI BIỂU<br>ĐOÀN TNCS HỒ CHÍ MINH UBND TỈNH NINH BÌNH</h1>
+      <h3>LẦN THỨ I, NHIỆM KỲ 2025 - 2030</h3>
+    </div>
+  </section>
+  <div class="main-content">
+	<section class="van-kien-section">
+    <h2>VĂN KIỆN ĐẠI HỘI</h2>
+    <div class="content">
+      <div class="item" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/vankien/Scan_báo cáo chính tri_0001.pdf')"><span >BÁO CÁO CHÍNH TRỊ</span></div>
+      <div class="item" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/vankien/Scan_bao cáo kiểm điểm BCH_0001.pdf')"><span >BÁO CÁO KIỂM ĐIỂM</span></div>
+      <div class="item" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/vankien/Scan_Nghị quyet Đoàn TN_0001.pdf')"><span >DỰ THẢO NGHỊ QUYẾT</span></div>
+	  <!-- <div class="item" onclick="openUrl('')"><span >DỰ THẢO CHƯƠNG TRÌNH HÀNH ĐỘNG THỰC HIỆN NGHỊ QUYẾT ĐẠI HỘI</span></div> -->
+    </div>
+  </section>
+  <section class="tai-lieu-section">
+    <img src="_asssets/images/logovnpt.png" alt="VNPT" style="max-height: 21px;
+    position: absolute;
+    left: 15px;
+    margin-top: 10px;" onclick="openUrl('https://vnpt.com.vn/')">
+    <!-- <img src="/_asssets/images/80nambg.png" alt="VNPT" style="max-height: 50px; max-height: 50px; -->
+		<!-- position: absolute; -->
+		<!-- right: 10px;" onclick="openUrl('https://vnpt.com.vn/80-nam-vnpt/index.html')"> -->
+    <h2>TÀI LIỆU ĐẠI HỘI</h2>
+    <div class="tai-lieu-list">
+      <a href="javascript:void(0)" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/tailieu/Scan_chuong trinh_0001.pdf')" class="tai-lieu-item"><span >CHƯƠNG TRÌNH ĐẠI HỘI</span></a>
+      <a href="javascript:void(0)" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/tailieu/Scan_Nội quy quy chế_0001.pdf')" class="tai-lieu-item">NỘI QUY, QUY CHẾ LÀM VIỆC ĐẠI HỘI</a>
+	  <!-- <a href="javascript:void(0)" onclick="openUrl('')" class="tai-lieu-item">DANH SÁCH CÁC ĐOÀN ĐẠI BIỂU</a> -->
+	  <a href="javascript:void(0)" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/tailieu/1.pdf')" class="tai-lieu-item">SƠ ĐỒ PHIÊN LÀM VIỆC SÁNG 23/10</a>
+	  <a href="javascript:void(0)" onclick="openUrl('https://daihoidoan.vnptlab.com/_document/tailieu/2.pdf')" class="tai-lieu-item">SƠ ĐỒ PHIÊN LÀM VIỆC CHIỀU 23/10</a>
+    </div>
+  </section>
+  <section class="red-section">
+    <div class="section-title">THAM LUẬN</div>
+    <div class="grid-buttons">
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/7. Tham luận_Sở Tư pháp.pdf')"><span>CHI ĐOÀN SỞ TƯ PHÁP TỈNH BẮC NINH</span></button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/8. Tham luận_Sở Tài chính.pdf')">ĐOÀN CƠ SỞ SỞ TÀI CHÍNH TỈNH BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/9. Bài tham luận_Sở KHCN.pdf')">CHI ĐOÀN SỞ KHOA HỌC VÀ CÔNG NGHỆ TỈNH BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/10. Tham luận_ Sở Nội vụ.pdf')">CHI ĐOÀN SỞ NỘI VỤ TỈNH BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/11. Tham luận_Viễn thông.pdf')">ĐOÀN CƠ SỞ VIỄN THÔNG BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/12. Tham luận_Sở Văn hóa.pdf')">ĐOÀN CƠ SỞ SỞ VĂN HÓA, THỂ THAO VÀ DU LỊCH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/13. Tham luận_Sở Y tế.pdf')">ĐOÀN CƠ SỞ SỞ Y TẾ TỈNH BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/14. Tham luận_Ban QLKCN.pdf')">ĐOÀN CƠ SỞ BAN QUẢN LÝ CÁC KHU CÔNG NGHIỆP TỈNH BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/15. Tham luận_ Trường CĐ Công nghiệp BN.pdf')">ĐOÀN TRƯỜNG CAO ĐẲNG CÔNG NGHIỆP BẮC NINH</button>
+      <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/16. Tham luận_Điện lực.pdf')">CÔNG TY ĐIỆN LỰC BẮC NINH</button>
+	  <button onclick="openUrl('https://daihoidoan.vnptlab.com/_document/thamluan/17. Tham luận_Chuyên BG.pdf')">ĐOÀN TRƯỜNG THPT CHUYÊN BẮC GIANG</button>
+    </div>
+  </section>
+ </div>
+<footer style="
+   
+    background: #8B0000;
+    text-align: center;
+    padding: 5px 15px;
+    color: #FFD700;
+    font-family: 'Arial', sans-serif;
+    border-top: 4px solid #FFD700;
+	background-image: url(_asssets/images/footervnpt.png);
+	background-size:34%
+">
+    <h2 style="
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.4;
+        margin: 0;
+        padding-bottom: 5px;
+		
+    ">
+        KÍNH CHÚC<br>ĐẠI HỘI THÀNH CÔNG RỰC RỠ!
+    </h2>
+		<div style="
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		font-size: 10px;
+		color: white;
+		cursor: pointer;
+	" id="vnpt">
+		<img src="_asssets/images/logovnpt.png" alt="VNPT" style="max-height: 21px;">
+		<h2 style="margin: 0;">đồng hành chuyển đổi số cùng đại hội</h2>
+	</div>
+</footer>
+<script>
+window.addEventListener('load', function () {
+    const video = document.getElementById('backgroundVideo'); 
+    const placeholder = document.getElementById('placeholder');
+
+    // Tạo thẻ source và set link -->
+    const source = document.createElement('source');
+    source.src = "https://daihoidoan.vnptlab.com/_asssets/video/codoan_troixanh.mp4";
+    source.type = "video/mp4";
+    video.appendChild(source);
+
+    // Khi video có thể play, ẩn ảnh, hiện video
+    video.addEventListener('canplay', function () {
+		video.style.display = 'block';
+		video.play().catch(()=>{}); // tránh lỗi autoplay
+		placeholder.style.display = 'none';
+	});
+}); 
+</script>
+<script>
+    const div = document.getElementById('vnpt');
+    div.addEventListener('click', function() {
+        window.open('https://vnpt.com.vn/', '_blank', 'noopener,noreferrer');
+    });
+</script>
+<script>
+function openUrl(url) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+}
+</script>
+</body>
+
+</html>
